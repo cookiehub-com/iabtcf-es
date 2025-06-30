@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "preversion": "echo 'woops I think you meant to go to the root' && exit 1",
-    "build": "../build ; cp -r src/vendorlist lib/mjs/ ; cp -r src/vendorlist lib/cjs/; yarn fix-cjs-import-require",
+    "build": "bash ../build; cp -r src/vendorlist lib/mjs/ ; cp -r src/vendorlist lib/cjs/; yarn fix-cjs-import-require",
     "fix-cjs-import-require": "cp lib/cjs/GVLFactory.cjs lib/cjs/GVLFactory.js",
     "lint": "eslint `find src -name '*.ts'`"
   },

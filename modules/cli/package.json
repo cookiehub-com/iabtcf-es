@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "preversion": "echo 'woops I think you meant to go to the root' && exit 1",
-    "build": "../build ; chmod a+x lib/mjs/index.js ; chmod a+x lib/cjs/index.js",
+    "build": "bash ../build ; chmod a+x lib/mjs/index.js ; chmod a+x lib/cjs/index.js",
     "lint": "eslint `find src -name '*.ts'`"
   },
   "dependencies": {
