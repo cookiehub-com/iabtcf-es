@@ -19,3 +19,14 @@ This is a mono repo containing 5 modules:
 ## Contributing
 
 Here you can find the [contributing guide](CONTRIBUTING.md) to help maintain and update the library.
+
+## Build
+
+Use wsl, go to /modules and run yarn build
+
+If missing:
+yarn add -D terser
+npm install -g terser
+
+add 'bash' to all package files so '../build' becomes 'bash ../build'
+all tsconfig.json files that have only ../tsconfig.json need to become the contents of the jsconfig.json in the /modules directory
