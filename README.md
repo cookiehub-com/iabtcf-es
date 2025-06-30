@@ -22,11 +22,14 @@ Here you can find the [contributing guide](CONTRIBUTING.md) to help maintain and
 
 ## Build
 
-Use wsl, go to /modules and run yarn build
+Use wsl, run from the root or /modules 'yarn build'
+A bunch of errors will appear but those are because the node_modules are missing for the npm library which is by design
 
-If missing:
+If missing for the build file:
 yarn add -D terser
 npm install -g terser
 
 add 'bash' to all package files so '../build' becomes 'bash ../build'
 all tsconfig.json files that have only ../tsconfig.json need to become the contents of the jsconfig.json in the /modules directory
+
+use Node 16.15.0
