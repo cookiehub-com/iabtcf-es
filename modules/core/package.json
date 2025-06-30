@@ -1,8 +1,8 @@
 {
   "name": "@cookiehub/iabtcf-core",
-  "version": "1.5.6-5",
+  "version": "1.5.15",
   "description": "Ensures consistent encoding and decoding of TC Signals for the iab. Transparency and Consent Framework (TCF).",
-  "author": "Chris Paterson <tcf@chrispaterson.io>",
+  "author": "Mayank Mishra <mayank@iabtechlab.com>",
   "homepage": "https://iabtcf.com/",
   "license": "Apache-2.0",
   "type": "module",
@@ -25,10 +25,11 @@
     "debug": "ndb mocha --no-timeouts",
     "serve:cov": "npx http-server ./coverage/",
     "test": "mocha",
-    "test-cov": "rm -rf coverage; nyc --reporter=html mocha"
+    "test-cov": "rm -rf coverage; nyc --reporter=html mocha",
+    "test-ci": "mocha --reporter mocha-junit-reporter"
   },
   "devDependencies": {
-    "@cookiehub/iabtcf-testing": "^1.5.6-5",
+    "@cookiehub/iabtcf-testing": "1.5.15",
     "@istanbuljs/nyc-config-typescript": "^0.1.3",
     "@types/sinon": "^10.0.11",
     "@types/sinon-chai": "3.2.8",
@@ -50,9 +51,9 @@
     "sinon-chai": "^3.7.0",
     "source-map-support": "^0.5.12",
     "terser": "^4.8.1",
-    "ts-node": "^10.5.0",
-    "typedoc": "^0.22.11",
-    "typescript": "4.5.5"
+    "ts-node": "10.9.1",
+    "typedoc": "0.24.8",
+    "typescript": "4.9.5"
   },
   "eslintIgnore": [
     "lib"

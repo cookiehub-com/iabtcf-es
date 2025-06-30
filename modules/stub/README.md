@@ -38,9 +38,9 @@ this should generate the `__tcfapi()` window function with the queing functional
 
 ##### to drop on a page
 ```
-git clone https://github.com/InteractiveAdvertisingBureau/iabtcf-es.git
+git clone https://github.com/InteractiveAdvertisingBureau/iabtechlabtcf-es.git
 
-cd iabtcf-es/modules/stub/
+cd iabtechlabtcf-es/modules/stub/
 
 yarn // or npm install
 

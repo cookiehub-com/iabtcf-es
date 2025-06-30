@@ -1,8 +1,8 @@
 {
   "name": "@cookiehub/iabtcf-testing",
-  "version": "1.5.6-5",
+  "version": "1.5.15",
   "description": "Shared testing utilities",
-  "author": "Chris Paterson <tcf@chrispaterson.io>",
+  "author": "Mayank Mishra <mayank@iabtechlab.com>",
   "homepage": "https://iabtcf.com/",
   "license": "Apache-2.0",
   "type": "module",
@@ -13,7 +13,8 @@
       "import": "./lib/mjs/index.js",
       "require": "./lib/cjs/index.js"
     },
-    "./lib/vendorlist/*.json": "./lib/mjs/vendorlist/*.json"
+    "./lib/vendorlist/v2/*.json": "./lib/mjs/vendorlist/v2/*.json",
+    "./lib/vendorlist/v2.2/*.json": "./lib/mjs/vendorlist/v2.2/*.json"
   },
   "types": "lib/mjs/index.d.ts",
   "files": [
@@ -40,8 +41,8 @@
     "mocha": "^9.2.0",
     "source-map-support": "^0.5.12",
     "terser": "^4.8.1",
-    "ts-node": "^10.5.0",
-    "typescript": "4.5.5"
+    "ts-node": "10.9.1",
+    "typescript": "4.9.5"
   },
   "eslintIgnore": [
     "lib"

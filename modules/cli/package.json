@@ -1,8 +1,8 @@
 {
   "name": "@cookiehub/iabtcf-cli",
-  "version": "1.5.6-5",
+  "version": "1.5.15",
   "description": "Decode a iab TCF (Transparency and Consent Framework) TC String via the command line",
-  "author": "Chris Paterson <tcf@chrispaterson.io>",
+  "author": "Mayank Mishra <mayank@iabtechlab.com>",
   "homepage": "https://iabtcf.com/",
   "license": "Apache-2.0",
   "bin": {
@@ -27,16 +27,17 @@
     "lint": "eslint `find src -name '*.ts'`"
   },
   "dependencies": {
-    "@cookiehub/iabtcf-core": "1.5.6-5"
+    "@cookiehub/iabtcf-core": "1.5.15"
   },
   "devDependencies": {
-    "@types/node": "^17.0.18",
+    "@types/node": "18.17.4",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "6.8.0",
     "source-map-support": "^0.5.12",
-    "ts-node": "^10.5.0",
-    "typescript": "^4.5.5"
+    "ts-node": "10.9.1",
+    "typedoc": "0.24.8",
+    "typescript": "4.9.5"
   },
   "eslintIgnore": [
     "lib"

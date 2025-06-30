@@ -4,15 +4,18 @@ import {GVLFactory} from './GVLFactory.js';
 
 export class TCModelFactory {
 
-  public static noGVL(tcModel?: TCModel): TCModel {
+  public static noGVL(gvl?: GVL): TCModel {
 
-    const latestGVL = GVLFactory.getLatest();
+    const tcModel = this.createBaseTCModel(gvl);
 
-    if (!tcModel) {
+    return tcModel;
 
-      tcModel = new TCModel();
+  }
 
-    }
+  private static createBaseTCModel(gvl?: GVL): TCModel {
+
+    const latestGVL = gvl || GVLFactory.getLatest();
+    const tcModel = new TCModel();
 
     tcModel.cmpId = makeRandomInt(2, 100);
     tcModel.cmpVersion = makeRandomInt(1, 10);
@@ -25,7 +28,7 @@ export class TCModelFactory {
 
     TCModel.consentLanguages.forEach((lang: string): void => {
 
-      counter ++;
+      counter++;
 
       if (counter === rand) {
 
@@ -88,11 +91,11 @@ export class TCModelFactory {
 
   }
 
-  public static addPublisherRestrictions(tcModel: TCModel): TCModel {
+  public static addPublisherRestrictions(tcModel: TCModel, gvl?: GVL): TCModel {
 
     if (!tcModel.gvl) {
 
-      tcModel.gvl = GVLFactory.getLatest();
+      tcModel.gvl = gvl || GVLFactory.getLatest();
 
     }
 
@@ -131,11 +134,11 @@ export class TCModelFactory {
 
   }
 
-  public static withGVL(): TCModel {
+  public static withGVL(gvl?: GVL): TCModel {
 
-    const tcModel = this.noGVL();
+    const tcModel = this.createBaseTCModel(gvl);
 
-    tcModel.gvl = GVLFactory.getLatest();
+    tcModel.gvl = gvl || GVLFactory.getLatest();
 
     return tcModel;
 
