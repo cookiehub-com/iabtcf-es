@@ -1,8 +1,8 @@
 import * as sinon from 'sinon';
 import {CmpApiModel} from '../../src/CmpApiModel';
 import {GetVendorListCommand} from '../../src/command/GetVendorListCommand';
-import {TCModelFactory, XMLHttpTestTools, GVLFactory, makeRandomInt} from '@cookiehub/testing';
-import {VendorList, TCModel} from '@cookiehub/core';
+import {TCModelFactory, XMLHttpTestTools, GVLFactory, makeRandomInt} from '@cookiehub/iabtcf-testing';
+import {VendorList, TCModel} from '@cookiehub/iabtcf-core';
 import {expect} from 'chai';
 import * as fs from 'fs';
 import * as path from 'path';

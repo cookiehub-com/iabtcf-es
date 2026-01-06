@@ -3,7 +3,7 @@ import * as sinon from 'sinon';
 import {GVL} from '../src/GVL';
 import {Vendor} from '../src/model/gvl';
 import {IntMap} from '../src/model/IntMap';
-import {XMLHttpTestTools} from '@cookiehub/testing';
+import {XMLHttpTestTools} from '@cookiehub/iabtcf-testing';
 import {Json} from '../src/Json';
 
 import vendorListJson from '../../testing/lib/mjs/vendorlist/v2/vendor-list-v24.json' assert { type: 'json' };

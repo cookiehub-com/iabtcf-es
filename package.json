@@ -18,14 +18,14 @@
     "tidy": "rm -rf modules/**/lib coverage modules/**/coverage .nyc_output modules/**/.nyc_output modules/**/*.log",
     "clean": "rm -rf node_modules modules/**/node_modules && yarn run tidy",
     "lint": "yarn workspaces run lint",
-    "test": "yarn workspace @cookiehub/core test && yarn workspace @cookiehub/cmpapi test",
+    "test": "yarn workspace @cookiehub/iabtcf-core test && yarn workspace @cookiehub/iabtcf-cmpapi test",
     "debug": "ndb yarn test",
     "postversion": "./bin/version",
     "deploy": "./bin/publish-version",
     "preflight": "yarn build && yarn test",
     "serve-cov": "npx http-server ./coverage/",
     "test-cov": "rm -rf coverage; nyc --reporter html mocha",
-    "test-ci": "yarn workspace @cookiehub/core test-ci && yarn workspace @cookiehub/cmpapi test-ci"
+    "test-ci": "yarn workspace @cookiehub/iabtcf-core test-ci && yarn workspace @cookiehub/iabtcf-cmpapi test-ci"
   },
   "keywords": [
     "interactive",

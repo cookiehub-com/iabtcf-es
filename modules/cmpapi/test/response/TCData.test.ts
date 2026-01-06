@@ -1,8 +1,8 @@
 import {CmpApiModel} from '../../src/CmpApiModel';
-import {PurposeRestriction, TCString} from '@cookiehub/core';
+import {PurposeRestriction, TCString} from '@cookiehub/iabtcf-core';
 import {TestUtils} from '../TestUtils';
 import {TCData} from '../../src/response/TCData';
-import {TCModelFactory, makeRandomInt, makeRandomIntArray} from '@cookiehub/testing';
+import {TCModelFactory, makeRandomInt, makeRandomIntArray} from '@cookiehub/iabtcf-testing';
 import {expect} from 'chai';
 
 describe('response->TCData', (): void => {

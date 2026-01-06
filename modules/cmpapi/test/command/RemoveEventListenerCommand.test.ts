@@ -2,8 +2,8 @@ import {AddEventListenerCommand} from '../../src/command/AddEventListenerCommand
 import {CmpApiModel} from '../../src/CmpApiModel';
 import {RemoveEventListenerCommand} from '../../src/command/RemoveEventListenerCommand';
 import {TCData} from '../../src/response';
-import {TCStringFactory} from '@cookiehub/testing';
-import {TCString} from '@cookiehub/core';
+import {TCStringFactory} from '@cookiehub/iabtcf-testing';
+import {TCString} from '@cookiehub/iabtcf-core';
 import {expect} from 'chai';
 
 describe('command->RemoveEventListenerCommand', (): void => {

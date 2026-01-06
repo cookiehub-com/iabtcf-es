@@ -1,4 +1,4 @@
-import {TCModel, PurposeRestriction, RestrictionType, GVL} from '@cookiehub/core';
+import {TCModel, PurposeRestriction, RestrictionType, GVL} from '@cookiehub/iabtcf-core';
 import {makeRandomInt} from './makeRandomInt.js';
 import {GVLFactory} from './GVLFactory.js';
 

@@ -1,5 +1,5 @@
 import {TCModelFactory} from './TCModelFactory.js';
-import {TCString} from '@cookiehub/core';
+import {TCString} from '@cookiehub/iabtcf-core';
 
 export class TCStringFactory {
 
