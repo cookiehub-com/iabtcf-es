@@ -1,6 +1,6 @@
 import {GetInAppTCDataCommand} from '../../src/command/GetInAppTCDataCommand';
 import {CmpApiModel} from '../../src/CmpApiModel';
-import {TCModelFactory} from '@cookiehub/testing';
+import {TCModelFactory} from '@cookiehub/iabtcf-testing';
 import {InAppTCData} from '../../src/response/InAppTCData';
 import {expect} from 'chai';
 

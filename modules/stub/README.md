@@ -1,8 +1,8 @@
-[![NPM version](https://img.shields.io/npm/v/@cookiehub/stub.svg?style=flat-square)](https://www.npmjs.com/package/@cookiehub/stub)
-[![npm module downloads per month](http://img.shields.io/npm/dm/@cookiehub/stub.svg?style=flat)](https://www.npmjs.org/package/@cookiehub/stub)
+[![NPM version](https://img.shields.io/npm/v/@cookiehub/iabtcf-stub.svg?style=flat-square)](https://www.npmjs.com/package/@cookiehub/iabtcf-stub)
+[![npm module downloads per month](http://img.shields.io/npm/dm/@cookiehub/iabtcf-stub.svg?style=flat)](https://www.npmjs.org/package/@cookiehub/iabtcf-stub)
 [![InteractiveAdvertisingBureau](https://circleci.com/gh/InteractiveAdvertisingBureau/iabtcf-es.svg?style=shield)](https://circleci.com/gh/InteractiveAdvertisingBureau/iabtcf-es)
 
-# @cookiehub/stub
+# @cookiehub/iabtcf-stub
 
 Cmp API Stub code.  Maybe included in commonjs loader or dropped directly on the page.
 
@@ -10,23 +10,23 @@ Cmp API Stub code.  Maybe included in commonjs loader or dropped directly on the
 
 npm
 ```
-npm install @cookiehub/stub
+npm install @cookiehub/iabtcf-stub
 ```
 
 yarn
 ```
-yarn add @cookiehub/stub
+yarn add @cookiehub/iabtcf-stub
 ```
 #### Using
 
 ##### include via module loading
 ```javascript
-import * as cmpstub from '@cookiehub/stub';
+import * as cmpstub from '@cookiehub/iabtcf-stub';
 ```
 or
 
 ```javascript
-const cmpstub = require('@cookiehub/stub');
+const cmpstub = require('@cookiehub/iabtcf-stub');
 ```
 
 then execute:

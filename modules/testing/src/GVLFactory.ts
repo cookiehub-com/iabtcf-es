@@ -1,4 +1,4 @@
-import {GVL} from '@cookiehub/core';
+import {GVL} from '@cookiehub/iabtcf-core';
 import * as fs from 'fs';
 import * as path from 'path';
 import {fileURLToPath} from 'url';

@@ -1,5 +1,5 @@
 {
-  "name": "@cookiehub/testing",
+  "name": "@cookiehub/iabtcf-testing",
   "version": "1.5.20",
   "description": "Shared testing utilities",
   "author": "Mayank Mishra <mayank@iabtechlab.com>",
@@ -27,7 +27,7 @@
     "lint": "eslint `find src -name '*.ts'`"
   },
   "peerDependencies": {
-    "@cookiehub/core": ">=1.0.0"
+    "@cookiehub/iabtcf-core": ">=1.0.0"
   },
   "dependencies": {
     "@types/sinon": "^10.0.11",

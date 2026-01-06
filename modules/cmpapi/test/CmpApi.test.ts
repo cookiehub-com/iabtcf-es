@@ -7,11 +7,11 @@ import {Ping} from '../src/response/Ping';
 import {TCData} from '../src/response/TCData';
 import {TCFCommand} from '../src/command/TCFCommand';
 import {TestUtils} from './TestUtils';
-import {VendorList} from '@cookiehub/core';
+import {VendorList} from '@cookiehub/iabtcf-core';
 import {expect} from 'chai';
-import {makeRandomInt, makeRandomString, TCStringFactory} from '@cookiehub/testing';
+import {makeRandomInt, makeRandomString, TCStringFactory} from '@cookiehub/iabtcf-testing';
 
-import * as stub from '@cookiehub/stub';
+import * as stub from '@cookiehub/iabtcf-stub';
 
 const API_VERSION = 2;
 

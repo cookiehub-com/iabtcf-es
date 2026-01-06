@@ -1,4 +1,4 @@
-import {sameDataDiffRef} from '@cookiehub/testing';
+import {sameDataDiffRef} from '@cookiehub/iabtcf-testing';
 import {expect} from 'chai';
 import {TCModel} from '../src/TCModel';
 

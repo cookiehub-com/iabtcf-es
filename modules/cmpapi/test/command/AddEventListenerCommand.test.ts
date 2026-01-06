@@ -1,6 +1,6 @@
 import {AddEventListenerCommand} from '../../src/command/AddEventListenerCommand';
 import {CmpApiModel} from '../../src/CmpApiModel';
-import {TCModelFactory} from '@cookiehub/testing';
+import {TCModelFactory} from '@cookiehub/iabtcf-testing';
 import {TCData} from '../../src/response/TCData';
 import {expect} from 'chai';
 
