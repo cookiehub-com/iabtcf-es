@@ -3,10 +3,10 @@ import {CmpApiModel} from '../src/CmpApiModel';
 import {CmpApi} from '../src/CmpApi';
 import {CustomCommands} from '../src/CustomCommands';
 import {InAppTCData} from '../src/response/InAppTCData';
-import {PurposeRestriction, TCString, Vector} from '@iabtechlabtcf/core';
+import {PurposeRestriction, TCString, Vector} from '@cookiehub/core';
 import {TCData} from '../src/response/TCData';
 import {expect} from 'chai';
-import {makeRandomInt} from '@iabtechlabtcf/testing';
+import {makeRandomInt} from '@cookiehub/testing';
 
 export class TestUtils {
 

@@ -47,10 +47,10 @@ jobs:
         run: |
             VERSION="${{ github.event.inputs.environment }}"
             echo "Release v  $VERSION"
-            jq --arg ver "$VERSION" '.dependencies["@iabtechlabtcf/core"] = $ver' modules/cli/package.json > temp.json && mv temp.json modules/cli/package.json
-            jq --arg ver "$VERSION" '.devDependencies["@iabtechlabtcf/stub"] = $ver' modules/cmpapi/package.json > temp.json && mv temp.json modules/cmpapi/package.json
-            jq --arg ver "$VERSION" '.devDependencies["@iabtechlabtcf/testing"] = $ver' modules/cmpapi/package.json > temp.json && mv temp.json modules/cmpapi/package.json
-            jq --arg ver "$VERSION" '.devDependencies["@iabtechlabtcf/testing"] = $ver' modules/core/package.json > temp.json && mv temp.json modules/core/package.json
+            jq --arg ver "$VERSION" '.dependencies["@cookiehub/core"] = $ver' modules/cli/package.json > temp.json && mv temp.json modules/cli/package.json
+            jq --arg ver "$VERSION" '.devDependencies["@cookiehub/stub"] = $ver' modules/cmpapi/package.json > temp.json && mv temp.json modules/cmpapi/package.json
+            jq --arg ver "$VERSION" '.devDependencies["@cookiehub/testing"] = $ver' modules/cmpapi/package.json > temp.json && mv temp.json modules/cmpapi/package.json
+            jq --arg ver "$VERSION" '.devDependencies["@cookiehub/testing"] = $ver' modules/core/package.json > temp.json && mv temp.json modules/core/package.json
 
       - name: Publish to NPM
         if: ${{steps.check.outputs.version_changed == 'true'}}
@@ -66,11 +66,11 @@ jobs:
         if: ${{steps.check.outputs.version_changed == 'true'}}
         run: | 
           VERSION="${{ github.event.inputs.environment }}"
-          npm dist-tag add @iabtechlabtcf/cmpapi@$VERSION latest
-          npm dist-tag add @iabtechlabtcf/core@$VERSION latest
-          npm dist-tag add @iabtechlabtcf/stub@$VERSION latest
-          npm dist-tag add @iabtechlabtcf/cli@$VERSION latest
-          npm dist-tag add @iabtechlabtcf/testing@$VERSION latest
+          npm dist-tag add @cookiehub/cmpapi@$VERSION latest
+          npm dist-tag add @cookiehub/core@$VERSION latest
+          npm dist-tag add @cookiehub/stub@$VERSION latest
+          npm dist-tag add @cookiehub/cli@$VERSION latest
+          npm dist-tag add @cookiehub/testing@$VERSION latest
           
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
@@ -78,11 +78,11 @@ jobs:
         if: ${{steps.check.outputs.version_changed == 'true'}}
         run: | 
           VERSION="${{ github.event.inputs.environment }}"
-          npm dist-tag rm @iabtechlabtcf/cmpapi@$VERSION next
-          npm dist-tag rm @iabtechlabtcf/core@$VERSION next
-          npm dist-tag rm @iabtechlabtcf/stub@$VERSION next
-          npm dist-tag rm @iabtechlabtcf/cli@$VERSION next
-          npm dist-tag rm @iabtechlabtcf/testing@$VERSION next
+          npm dist-tag rm @cookiehub/cmpapi@$VERSION next
+          npm dist-tag rm @cookiehub/core@$VERSION next
+          npm dist-tag rm @cookiehub/stub@$VERSION next
+          npm dist-tag rm @cookiehub/cli@$VERSION next
+          npm dist-tag rm @cookiehub/testing@$VERSION next
           
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
