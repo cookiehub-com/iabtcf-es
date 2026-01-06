@@ -1,8 +1,8 @@
-[![NPM version](https://img.shields.io/npm/v/@iabtechlabtcf/cli.svg?style=flat-square)](https://www.npmjs.com/package/@iabtechlabtcf/cli)
-[![npm module downloads per month](http://img.shields.io/npm/dm/@iabtechlabtcf/cli.svg?style=flat)](https://www.npmjs.org/package/@iabtechlabtcf/cli)
+[![NPM version](https://img.shields.io/npm/v/@cookiehub/cli.svg?style=flat-square)](https://www.npmjs.com/package/@cookiehub/cli)
+[![npm module downloads per month](http://img.shields.io/npm/dm/@cookiehub/cli.svg?style=flat)](https://www.npmjs.org/package/@cookiehub/cli)
 [![InteractiveAdvertisingBureau](https://circleci.com/gh/InteractiveAdvertisingBureau/iabtcf-es.svg?style=shield)](https://circleci.com/gh/InteractiveAdvertisingBureau/iabtcf-es)
 
-# @iabtechlabtcf/cli
+# @cookiehub/cli
 
 command line decoding of iab TC String
 
@@ -10,12 +10,12 @@ command line decoding of iab TC String
 
 npm
 ```
-npm install -g @iabtechlabtcf/cli
+npm install -g @cookiehub/cli
 ```
 
 yarn
 ```
-yarn add -g @iabtechlabtcf/cli
+yarn add -g @cookiehub/cli
 ```
 
 #### Using

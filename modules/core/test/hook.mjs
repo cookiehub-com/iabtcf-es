@@ -1,4 +1,4 @@
-import {XMLHttpTestTools} from '@iabtechlabtcf/testing';
+import {XMLHttpTestTools} from '@cookiehub/testing';
 import {GVL} from '../src/GVL';
 
 /**

@@ -2,7 +2,7 @@ import {CmpApiModel} from './CmpApiModel.js';
 import {CustomCommands} from './CustomCommands.js';
 import {CmpStatus, DisplayStatus, EventStatus} from './status/index.js';
 import {CallResponder} from './CallResponder.js';
-import {TCString, TCModel} from '@iabtechlabtcf/core';
+import {TCString, TCModel} from '@cookiehub/core';
 
 export class CmpApi {
 
@@ -52,7 +52,7 @@ export class CmpApi {
    * for eventStatus and displayStatus.
    * @return {void}
    */
-  public update(encodedTCString: string | null, uiVisible = false): void {
+  public update(encodedTCString: string | null, uiVisible = false, addtlConsent: string): void {
 
     if (CmpApiModel.disabled) {
 
@@ -107,6 +107,10 @@ export class CmpApi {
       CmpApiModel.tcfPolicyVersion = Number(CmpApiModel.tcModel.policyVersion);
       CmpApiModel.tcString = encodedTCString;
 
+    }
+
+    if (addtlConsent !== null) {
+      CmpApiModel.addtlConsent = addtlConsent;
     }
 
     if (this.numUpdates === 0) {

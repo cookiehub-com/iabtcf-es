@@ -1,4 +1,4 @@
-import {TCModel, PurposeRestriction, PurposeRestrictionVector, Vector, IdBoolTuple} from '@iabtechlabtcf/core';
+import {TCModel, PurposeRestriction, PurposeRestrictionVector, Vector, IdBoolTuple} from '@cookiehub/core';
 
 import {CmpApiModel} from '../CmpApiModel.js';
 import {BooleanVector} from './BooleanVector.js';
@@ -10,6 +10,7 @@ import {EventStatus, CmpStatus} from '../status/index.js';
 export class TCData extends Response {
 
   public tcString: string;
+  public addtlConsent: string;
   public listenerId: number;
   public eventStatus: EventStatus;
   public cmpStatus: CmpStatus;
@@ -76,6 +77,7 @@ export class TCData extends Response {
       const tcModel = CmpApiModel.tcModel as TCModel;
 
       this.tcString = CmpApiModel.tcString;
+      this.addtlConsent = CmpApiModel.addtlConsent;
       this.isServiceSpecific = tcModel.isServiceSpecific;
       this.useNonStandardTexts = tcModel.useNonStandardTexts;
       this.purposeOneTreatment = tcModel.purposeOneTreatment;

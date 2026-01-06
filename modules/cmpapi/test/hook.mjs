@@ -1,5 +1,5 @@
-import {XMLHttpTestTools} from '@iabtechlabtcf/testing';
-import {GVL} from "@iabtechlabtcf/core";
+import {XMLHttpTestTools} from '@cookiehub/testing';
+import {GVL} from "@cookiehub/core";
 import {CmpApiModel} from "../src/index.js";
 
 GVL.baseUrl = 'http://sweetcmp.mgr.consensu.org';

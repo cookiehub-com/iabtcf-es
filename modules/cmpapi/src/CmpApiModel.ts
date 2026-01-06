@@ -1,6 +1,6 @@
 import {CmpStatus, DisplayStatus, EventStatus} from './status/index.js';
 import {EventListenerQueue} from './EventListenerQueue.js';
-import {TCModel} from '@iabtechlabtcf/core';
+import {TCModel} from '@cookiehub/core';
 
 /**
  * Class holds shareable data across cmp api and provides change event listener for TcModel.
@@ -22,6 +22,7 @@ export class CmpApiModel {
   public static gdprApplies: boolean;
   public static tcModel: TCModel;
   public static tcString: string;
+  public static addtlConsent: string;
 
   public static reset(): void {
 
@@ -31,6 +32,7 @@ export class CmpApiModel {
     delete this.gdprApplies;
     delete this.tcModel;
     delete this.tcString;
+    delete this.addtlConsent;
     delete this.tcfPolicyVersion;
 
     this.cmpStatus = CmpStatus.LOADING;
