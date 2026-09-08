@@ -1,4 +1,4 @@
-import {RestrictionType} from '@iabtechlabtcf/core';
+import {RestrictionType} from '@cookiehub/iabtcf-core';
 
 export interface Restrictions {
 

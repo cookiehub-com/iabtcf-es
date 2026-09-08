@@ -1,4 +1,4 @@
-import {GVL} from '@iabtechlabtcf/core';
+import {GVL} from '@cookiehub/iabtcf-core';
 
 export class GVLFactory {
 
