@@ -2,7 +2,7 @@ import {CmpApiModel} from './CmpApiModel.js';
 import {CustomCommands} from './CustomCommands.js';
 import {CmpStatus, DisplayStatus, EventStatus} from './status/index.js';
 import {CallResponder} from './CallResponder.js';
-import {TCString, TCModel} from '@iabtechlabtcf/core';
+import {TCString, TCModel} from '@cookiehub/iabtcf-core';
 
 export class CmpApi {
 
@@ -50,9 +50,12 @@ export class CmpApi {
    * @param {boolean} uiVisible - default false.  set to true if the ui is
    * being shown with this tc string update, this will set the correct values
    * for eventStatus and displayStatus.
+   * @param {string} [addtlConsent] - CookieHub addition. Google Additional
+   * Consent string, surfaced on TCData as `addtlConsent`. Omit or pass
+   * null/undefined to leave the previously-set value untouched.
    * @return {void}
    */
-  public update(encodedTCString: string | null, uiVisible = false): void {
+  public update(encodedTCString: string | null, uiVisible = false, addtlConsent?: string): void {
 
     if (CmpApiModel.disabled) {
 
@@ -106,6 +109,12 @@ export class CmpApi {
       CmpApiModel.tcModel.isServiceSpecific = this.isServiceSpecific;
       CmpApiModel.tcfPolicyVersion = Number(CmpApiModel.tcModel.policyVersion);
       CmpApiModel.tcString = encodedTCString;
+
+    }
+
+    if (addtlConsent != null) {
+
+      CmpApiModel.addtlConsent = addtlConsent;
 
     }
 
